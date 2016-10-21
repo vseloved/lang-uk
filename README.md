@@ -23,18 +23,16 @@ Swagger-опис: <http://uk.lisp.kiev.ua/swagger>
 Приклад запиту і його результату:
 
 ```
-$ curl http://uk.lisp.kiev.ua/lemma -x POST -d '{"words":["\u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u044C","\u043B\u044E\u0431\u0438\u0442\u044C","\u0432\u0456\u0442\u0435\u0440","\u043E\u0445"]}' | jq '.'
+$ curl http://uk.lisp.kiev.ua/lemma -X POST -d '{"words":["приходить", "вітер", "ох"]}' | jq '.'
 
 [
   [
-    "приходить",
-    "любить",
+    "приходити",
     "вітер",
     "ох"
   ],
   [
-    "verb:imperf:pres:s:3",
-    "verb:imperf:pres:s:3",
+    "verb:imperf:inf",
     "noun:inanim:m:v_zna",
     "excl"
   ]
