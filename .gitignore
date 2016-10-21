@@ -1,0 +1,7 @@
+*~
+*.fasl
+\#*
+.*
+data/
+!.travis.yml
+!.gitignore
